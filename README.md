@@ -1,4 +1,4 @@
-# ScalaSparkTrainingAssigmnet2k23MarBatch
+# Scala Assignment Questions
 
 ## Question 1 | Friday Mar 10th
 The ruler of the Seven Kingdoms has just received a message from a mysterious ally, informing them that one of their enemies has hidden a powerful artifact in a chest with a number that is a perfect square. However, the enemy has hidden the chest in a secret location and guarded it with a large number of soldiers.
