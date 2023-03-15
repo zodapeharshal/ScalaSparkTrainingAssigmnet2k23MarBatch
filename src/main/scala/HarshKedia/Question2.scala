@@ -8,7 +8,7 @@ object Question2 extends App {
   }
 
   print("Enter the number n : ")
-  val n= scala.io.StdIn.readLine().toInt
+  val n= scala.io.StdIn.readLine().trim.toInt
   val result = fact(n,1)
 
   println(s"The factorial of number $n is : $result")
