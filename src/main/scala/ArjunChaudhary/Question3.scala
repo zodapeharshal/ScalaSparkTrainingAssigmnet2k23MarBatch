@@ -2,7 +2,7 @@ package ArjunChaudhary
 
 import scala.annotation.tailrec
 
-object Question3 extends App{
+object Question3 {
 
 
   def fibonacci(input: Int): Int = {
@@ -15,7 +15,5 @@ object Question3 extends App{
     val res = if (input == 1) 0 else if (input == 2) 1 else fib(0, 1, input)
     res
   }
-
-  println(fibonacci(10))
 
 }
