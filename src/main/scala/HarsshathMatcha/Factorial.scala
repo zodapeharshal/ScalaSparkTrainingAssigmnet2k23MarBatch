@@ -1,5 +1,6 @@
+package HarsshathMatcha
 import scala.annotation._
-object Factorial extends App{
+object Factorial {
   def factorial(n:Int):Int={
     @tailrec
     def factorialnumber(n:Int, res:Int):Int={
@@ -8,9 +9,9 @@ object Factorial extends App{
     }
     factorialnumber(n,1)
   }
-  println("enter the number")
-  val n = scala.io.StdIn.readInt()
-  println("The factorial of the number is: ")
-  println(factorial(n))
+  //println("enter the number")
+  //val n = scala.io.StdIn.readInt()
+  //println("The factorial of the number is: ")
+  //println(factorial(n))
 }
 
