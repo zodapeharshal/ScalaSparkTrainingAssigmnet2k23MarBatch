@@ -1,7 +1,8 @@
-object Main {
+package RitikKuril
+object Question3 {
 
 
-  def fibonacci(n:Int,temp0:BigInt,temp1:BigInt):BigInt ={
+  def Fibonacci(n:Int,temp0:BigInt,temp1:BigInt):BigInt ={
 
     if(n==1)
       temp1;
@@ -9,10 +10,10 @@ object Main {
     else if(n==0)
       temp0;
     else
-      fibonacci(n-1,temp1,temp0+temp1);
+      Fibonacci(n-1,temp1,temp0+temp1);
 
   }
-  def main(args: Array[String]): Unit = {
+  /*def main(args: Array[String]): Unit = {
 
     println("Enter the value of n");
     val n= scala.io.StdIn.readInt();
@@ -23,4 +24,6 @@ object Main {
 
 
   }
+
+   */
 }

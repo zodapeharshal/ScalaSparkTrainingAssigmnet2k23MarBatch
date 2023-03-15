@@ -1,8 +1,8 @@
-object Main {
-  def main(args: Array[String]): Unit = {
+package RitikKuril
+object Question1 {
+  def Perfect(n:Int): Int = {
 
-    println("Enter the size of array->");
-    val n = scala.io.StdIn.readInt();
+
     val no = new Array[Int](n);
 
     println("Enter the array->");
@@ -15,5 +15,6 @@ object Main {
     val count = no.count(x => Math.sqrt(x) % 1 == 0)
     println("total no of perfect sqaures are->")
     println(count);
+    count;
   }
 }

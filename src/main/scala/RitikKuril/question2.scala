@@ -1,15 +1,16 @@
-object Main {
+package RitikKuril
+object Question2 {
 
 
-  def factorial(n:Int,res:Int):Int ={
+  def Factorial(n:Int,res:Int):Int ={
    if(n<=1)
      res;
 
    else
-     factorial(n-1,n*res);
+     Factorial(n-1,n*res);
 
   }
-  def main(args: Array[String]): Unit = {
+  /*def main(args: Array[String]): Unit = {
 
     println("Enter the value of n");
     val n= scala.io.StdIn.readInt();
@@ -20,4 +21,6 @@ object Main {
 
 
   }
+
+   */
 }
