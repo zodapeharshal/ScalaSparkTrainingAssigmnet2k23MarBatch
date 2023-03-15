@@ -1,15 +1,13 @@
 package ShlokThakkar
 
-object Assignment2Q1 extends App {
-  def Factorial(x:Int,fact: Int ): Int =
+object Assignment2Q1{
+  def Factorial(x:Int,fact: Int=1 ): Int =
   {
-    if(x==1)
+    if(x<=1)
       fact
     else {
       Factorial(x-1,x*fact)
     }
   }
-  val num = scala.io.StdIn.readLine("Enter a number: ")
-  println(Factorial(num.trim.toInt,1))
 }
 

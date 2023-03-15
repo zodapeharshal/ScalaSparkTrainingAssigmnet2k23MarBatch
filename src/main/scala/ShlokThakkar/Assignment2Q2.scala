@@ -16,6 +16,18 @@ def Fibonacci(n:Int ,firstNumber: Int =0, secondNumber: Int=1, Start:Int=1 ): In
         Fibonacci(n,secondNumber,secondNumber+firstNumber, Start+1)
       }
   }
-  val n = scala.io.StdIn.readLine("Enter the number: ").trim.toInt
-  println(Fibonacci(n))
+
+  def LastElementOfList(list: List[Int]): Int =
+  {
+    if(list.tail.length==1)
+      {
+        list.tail.head
+      }
+    else
+      {
+        LastElementOfList(list.tail)
+      }
+  }
+
+
 }
