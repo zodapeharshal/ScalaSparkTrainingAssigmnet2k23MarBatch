@@ -11,8 +11,5 @@ object Fibonacci extends App{
     fibonacciseries(n,0,1)
   }
 
-  println("enter the n value")
-  val n = scala.io.StdIn.readInt()
-  println("The nth number in the fibonacci series")
-  println(fibonacci(n))
+  assert(fibonacci (10)==34, "wrong result")
 }

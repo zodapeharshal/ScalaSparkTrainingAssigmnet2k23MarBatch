@@ -1,5 +1,5 @@
 package YintiSriPranav
-
+import factorial.{factorial}
 object factorial extends App {
 
   def factorial(n: Int, res: Int ): Int = {
@@ -10,7 +10,7 @@ object factorial extends App {
     }
 
   }
-  println(factorial(5,1))
+  assert(factorial(5,1)==120,"wrong result")
 }
 
 
