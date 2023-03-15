@@ -16,6 +16,4 @@ object Question3 {
     res
   }
 
-//  println(fibonacci(10))
-
 }
