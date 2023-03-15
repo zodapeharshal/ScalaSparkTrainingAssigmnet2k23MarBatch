@@ -1,12 +1,14 @@
 package ArjunChaudhary
 
-object Question2 extends App{
-  // facotrial function
-  def factorial(input: Int): Int = {
-    val res: Int = if (input > 1) input * factorial(input - 1) else 1
-    res
-  }
+import scala.annotation.tailrec
 
-  println(factorial(5))
+object Question2 {
+  // facotrial function
+  @tailrec
+  def factorial(input: Int, res:Int): Int = {
+    if (input == 1)  res
+    else
+    factorial(input-1,res*input)
+  }
 
 }
