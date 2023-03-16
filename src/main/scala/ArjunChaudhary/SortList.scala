@@ -25,11 +25,11 @@ object SortList extends App {
     val res = lenSorted.map(maplen(_))
     res
   }
-  val l = Sortlist(List("hi","hello","bye","last"))
+//  val l = Sortlist(List("hi","hello","bye","last"))
 
 //  val l = list.sortWith(_.length < _.length)
 
-  println(l)
+//  println(l)
 
 
 }
