@@ -3,6 +3,7 @@ import YintiSriPranav.factorial.factorial
 import YintiSriPranav.Fibonacci.fibonacci
 import YintiSriPranav.lastelement.last
 import YintiSriPranav.vowels.{countVowels}
+import YintiSriPranav.pranav.Vow
 object Main extends App {
   //println("Welcome to Scala")
   assert(factorial(5,1)==120,"wrong result")
