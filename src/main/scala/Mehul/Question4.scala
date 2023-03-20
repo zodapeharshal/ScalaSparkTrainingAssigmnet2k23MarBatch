@@ -1,4 +1,4 @@
-package MMehul
+package Mehul
 
 import scala.annotation.tailrec
 
