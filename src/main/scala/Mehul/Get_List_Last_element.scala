@@ -1,4 +1,4 @@
-package MMehul
+package Mehul
 import scala.annotation.tailrec
 object Get_List_Last_element {
        def List_last_element(list:List[Int]):Int={
@@ -15,9 +15,5 @@ object Get_List_Last_element {
          fun(list)
 
        }
-      def main(args:Array[String]): Unit =
-  {
-   // print(List_last_element(List(2,3,4,5,6)))
-    print(List_last_element(List.empty[Int]))
-  }
+      
 }
