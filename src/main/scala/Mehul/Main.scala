@@ -1,8 +1,10 @@
 package Mehul
-//import Mehul.Lastindex.List_last_index.add
-import Mehul.List_last.list_recursion
+
+import Mehul.Get_List_Last_element.List_last_element
+import Mehul.Question4.division_
 object Main {
-  //println("Welcome to Scala")
-  assert(list_recursion(List(2,3,4,5))==5,"wrong answer")
+  
+  assert(List_last_element(List(2,3,4,5))==5,"wrong answer")
+  assert(division_(List(2,3,4,5,6),2)==1,"not divisible")
 
 }
