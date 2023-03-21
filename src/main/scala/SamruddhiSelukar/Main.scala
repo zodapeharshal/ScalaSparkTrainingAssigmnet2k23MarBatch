@@ -1,14 +1,17 @@
 package SamruddhiSelukar
-import SamruddhiSelukar.Hello
-import SamruddhiSelukar.Factorial
 
-object Main extends App {
+object Main {
 //  println("Welcome to Scala")
+  def main(args: Array[String]): Unit = {
+//    val greet = new Hello
+//    greet.helloWorld()
 
-//  private val hello = new Hello()
-//  hello.helloworld()
+//    val calcFac = new Factorial
+//    val n = 5
+//    println(s"The factorial of $n is ${calcFac.factorial(n)}")
 
-  val fac_val = new Factorial()
-  println(fac_val.fac(5))
-
+    val fib = new Fibonacci
+    val n = 10
+    println(s"The fibonacci series is ${fib.fibonacci(n)}")
+  }
 }
