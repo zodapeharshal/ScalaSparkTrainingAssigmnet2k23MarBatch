@@ -1,31 +1,35 @@
 package ShlokThakkar
 
-object Assignment2Q2 extends App {
-  //n is the nth number of fibonacci
-def Fibonacci(n:Int ,firstNumber: Int =0, secondNumber: Int=1, Start:Int=1 ): Int =
+object Assignment2Q2{
+
+  // nth number of fibonacci
+  def fibonacci(n:Int ,firstNumber: Int =0, secondNumber: Int=1, start:Int=1 ): Int =
   {
     //terminal condition
     // returning first number to solve the problem of returning 0 at n=1
-    if(Start == n)
+    if(start == n)
       {
         firstNumber
       }
     //updating the value of firstnumber to secondnumber and increasing the value of start
     else
       {
-        Fibonacci(n,secondNumber,secondNumber+firstNumber, Start+1)
+        fibonacci(n,secondNumber,secondNumber+firstNumber, start+1)
       }
   }
 
-  def LastElementOfList(list: List[Int]): Int =
+
+  //Last Element Of a List
+  def lastElementOfList(input: List[Int]): Int =
   {
-    if(list.tail.length==1)
+    
+    if(input.tail.length==1)
       {
-        list.tail.head
+        input.tail.head
       }
     else
       {
-        LastElementOfList(list.tail)
+        lastElementOfList(input.tail)
       }
   }
 
