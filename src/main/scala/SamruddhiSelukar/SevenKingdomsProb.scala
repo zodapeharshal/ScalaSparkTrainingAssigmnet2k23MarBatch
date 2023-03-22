@@ -15,7 +15,7 @@ class SevenKingdomsProb {
 
   //WITHOUT USING var
   def squareRoot(a: Array[Int]): Int = {
-    a.foldLeft(0)((count, i) => {  // foldLeft function takes the left value of the parameters int the lambda function as an accumulator that can be updated and returned at the last
+    a.foldLeft(0)((count, i) => {  // foldLeft function takes the left value of the parameters as an accumulator that can be updated and returned at the last and the right parameter is the lambda function
       val sqrtNum = math.sqrt(i).toInt //the second value taken is the elements in the array
       if (sqrtNum * sqrtNum == i) {
         count + 1
