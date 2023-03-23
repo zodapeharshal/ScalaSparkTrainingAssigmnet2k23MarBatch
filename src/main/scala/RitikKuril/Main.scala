@@ -12,6 +12,7 @@ import DuplicateElementSam.dup
 import NocharacterArj.arrange
 import CountvowelsPra.calculate
 import RandomElementSelectshlok.randomSelect
+import NthhighestElement.nthhighestelement
 
 import NthprimeNo.nthPrime
 object Main extends App {
@@ -48,4 +49,6 @@ object Main extends App {
 
 
   //print(randomSelect(2,List(8,1,9,12,67)))    Extract a given number of randomly selected elements from a list.
+
+  //assert(nthhighestelement(List(5,1,2,89,23),3)==5,"wrong answer") nth highest Element
 }
