@@ -1,5 +1,5 @@
 package RitikKuril
-
+//Insert an element at a given position into a list.
 object InsertElement {
 
   def insert(list:List[Int],n:Int,element:Int,counter:Int,ans:List[Int]):Any=list match {

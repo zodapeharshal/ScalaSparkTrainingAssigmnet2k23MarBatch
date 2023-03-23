@@ -1,5 +1,7 @@
 package RitikKuril
 import scala.util.Random
+
+//Extract a given number of randomly selected elements from a list
 object RandomElementSelectshlok {
 
   def randomSelect[A](n: Int, list: List[A]): List[A] = {

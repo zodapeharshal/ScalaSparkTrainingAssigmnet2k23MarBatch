@@ -1,5 +1,5 @@
 package RitikKuril
-
+//Split array in two parts
 object SplitArrray {
 
   /*def split(list:List[Int],n:Int):List[List[Int]]={

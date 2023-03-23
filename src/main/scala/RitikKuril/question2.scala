@@ -1,4 +1,5 @@
 package RitikKuril
+//factorial
 object Question2 {
 
 

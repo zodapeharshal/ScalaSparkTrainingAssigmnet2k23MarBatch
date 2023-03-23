@@ -16,6 +16,7 @@ object DropNelement{
 
 
   }
+  //Drop every Nth element from a list.
 
   */
   def drop(list:List[Int],n:Int,counter:Int,ans:List[Int]):Any= list match {

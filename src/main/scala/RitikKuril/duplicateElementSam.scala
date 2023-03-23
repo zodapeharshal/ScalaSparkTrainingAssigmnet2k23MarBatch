@@ -1,5 +1,5 @@
 package RitikKuril
-
+//Duplicate the elements of a list a given number of times.
 object DuplicateElementSam {
   def dup(list:List[Any],n:Int,counter:Int,ans:List[Any]):List[Any]= list match{
 

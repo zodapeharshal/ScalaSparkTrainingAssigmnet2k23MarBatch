@@ -1,4 +1,5 @@
 package RitikKuril
+//fibonnaci number
 object Question3 {
 
 

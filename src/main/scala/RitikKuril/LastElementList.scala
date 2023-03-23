@@ -1,4 +1,5 @@
 package RitikKuril
+//Get the last Element from the list
 
 object LastElementList {
     def last(list:List[Int]):Int={

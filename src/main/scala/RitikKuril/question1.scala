@@ -1,4 +1,5 @@
 package RitikKuril
+//perfect square
 object Question1 {
   def perfect(n:Int): Int = {
 

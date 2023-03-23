@@ -13,7 +13,7 @@ object CountvowelsPra {
     helper(head,n-1,total)
   }
 
-
+// Count number of vowels of english alphabet in each word of the list of string.
   def calculate(list:List[String],ans:scala.collection.mutable.Map[String,Int]):scala.collection.mutable.Map[String,Int]=list  match {
     case Nil =>ans
     case head::tail => calculate(tail,ans+= head -> helper(head,head.length,0))

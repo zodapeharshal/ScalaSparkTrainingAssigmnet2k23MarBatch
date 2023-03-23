@@ -1,5 +1,5 @@
 package RitikKuril
-
+//Get the nth prime no
 object NthprimeNo {
 
   def nthPrime(n: Int): Int = {
