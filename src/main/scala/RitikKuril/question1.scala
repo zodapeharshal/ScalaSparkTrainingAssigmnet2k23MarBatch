@@ -1,6 +1,6 @@
 package RitikKuril
 object Question1 {
-  def Perfect(n:Int): Int = {
+  def perfect(n:Int): Int = {
 
 
     val no = new Array[Int](n);
