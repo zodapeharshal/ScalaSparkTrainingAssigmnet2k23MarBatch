@@ -26,9 +26,10 @@ object Main {
 //    val s = "apple"
 //    println(countNumVowels.numOfVowels(s))
 
-//    val s = "SAmruddhi"
-//    new CountVowels
-//    listVowels.listOfVowels(s)
+    val list = List("SAmruddhi", "sam", "win")
+    val result = new CountVowels
+    println(result.listOfVowels(list))
+
 
 
     //DUPLICATE LIST n TIMES
@@ -73,9 +74,9 @@ object Main {
 //    println(result.splittingList(n, list))
 
     //SORT LIST ACCORDING TO CHARS
-    val list = List("eat","to","fall","dance")
-    val result = new SortList
-    println(result.sortLessToMore(list))
+//    val list = List("eat","to","fall","dance")
+//    val result = new SortList
+//    println(result.sortLessToMore(list))
 
     //INSERT ELEMENT AT nth POSITION
 //    val n = 3
