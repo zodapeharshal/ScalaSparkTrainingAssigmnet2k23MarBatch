@@ -16,5 +16,15 @@ def sumDivide(index:Int, sum:Int, x:Int, list:List[Int]):Boolean={
     sumDivide(index+1,(sum+list(index+1))%x,x,list)
   }
 }
-  println(sumDivide(0,list(0),x,list))
+  if(x!=0) {
+    if (list.isEmpty) {
+      println("Given List is Empty")
+    }
+    else {
+      println(sumDivide(0, list(0), x, list))
+    }
+  }
+  else{
+    println("Given value of X is Zero")
+  }
 }

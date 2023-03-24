@@ -1,34 +1,34 @@
 package KaranAgrawal
 
 object NthPrime extends App {
-  val input=11
+  val input=9
   def nthPrime(n:Int,count:Int,input:Int): Int = {
     if(count==input){
       n
     }
     else{
-      if(isPrime(n,2)==true){
+      if(isPrime(n,3)==true){
         if(count+1==input){
           n
         }
         else{
-          nthPrime(n+1,count+1,input)
+          nthPrime(n+2,count+1,input)
         }
       }
       else{
-        nthPrime(n+1,count,input)
+        nthPrime(n+2,count,input)
       }
     }
   }
  def isPrime(n:Int,i:Int):Boolean= {
-  if(n%i==0){
-    false
-  }
-  else if(i*i>n){
+  if(i>n/2){
     true
   }
+   else if (n % i == 0) {
+     false
+   }
    else{
-    isPrime(n,i+1)
+    isPrime(n,i+2)
   }
   }
 if(input==1){
