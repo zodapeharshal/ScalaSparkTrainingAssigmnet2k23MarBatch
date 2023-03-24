@@ -1,8 +1,11 @@
 package ShlokThakkar
 
+import scala.annotation.tailrec
+
 object Assignment2Q2{
 
   // nth number of fibonacci
+  @tailrec
   def fibonacci(n:Int ,firstNumber: Int =0, secondNumber: Int=1, start:Int=1 ): Int =
   {
     //terminal condition
@@ -20,6 +23,7 @@ object Assignment2Q2{
 
 
   //Last Element Of a List
+  @tailrec
   def lastElementOfList(input: List[Int]): Int =
   {
     

@@ -26,6 +26,13 @@ object Main extends App {
 
   val assignments = new Assignments
 
+  //Pack consecutive duplicates of list elements into sublist.
+  println(assignments.consecutive(List('a','a','a','a','b','b','c','a','a','d','d','d','a')))
+
+
+  //nth Prime
+  println(assignments.nthPrime(1000))
+
 
   //Nth highest element of a list
   //println(assignments.nthHighest(5,List(1,3,5,8,7,4,4,1,5,8,9,5,5,1,5,5,225,8,4,5,5444,4)))
@@ -34,7 +41,7 @@ object Main extends App {
 
   //Sum of list divisibility
   //println(assignments.divisibleByX(5,List(5,10,15,20,25)))
-  assert(assignments.divisibleByX(5,List(5,10,15,20,25))== true,"Incorrect answer for divisibility")
+  assert(assignments.divisibleByX(5, List(5, 10, 15, 20, 25)),"Incorrect answer for divisibility")
 
 
   //Vowels in a Word

@@ -1,9 +1,58 @@
 package ShlokThakkar
 
-import scala.collection.mutable.ListBuffer
 import scala.util.{Failure, Success, Try}
 
 class Assignments{
+
+
+  //nth prime number
+  def nthPrime(n:Int,count :Int =0,number :Int =2,prime:Int = 0): Int =
+  {
+    if(count==n) {
+      prime
+    }
+    else{
+      if(isPrime(number)) {
+        nthPrime(n, count+1, number + 1,number)
+      }
+      else{
+        nthPrime(n,count,number+1,prime)
+      }
+    }
+  }
+
+  def isPrime(number :Int,temp:Int=2): Boolean={
+    if(number == 2){
+      true
+    }
+    else if(temp > Math.sqrt(number)){
+      true
+    }
+    else if(number%temp==0){
+      false
+    }
+    else{
+      isPrime(number,temp+1)
+    }
+  }
+
+
+  //Pack consecutive duplicates of list elements into sublist.
+  def consecutive(input: List[Char],output:List[List[Char]]=List()) :List[List[Char]] =
+  {
+    if(input.isEmpty){
+      output
+    }
+    else if(output.isEmpty){
+      consecutive(input.tail,output++List(List(input.head)))
+    }
+    else if(output.last.head == input.head){
+      consecutive(input.tail, output.take(output.length-1)++List(output.last++List(input.head)) )
+    }
+    else{
+      consecutive(input.tail, output++List(List(input.head)))
+    }
+  }
 
 
   //Nth highest element from a list
@@ -31,7 +80,7 @@ class Assignments{
       inputList.sum%x
     }
     match{
-      case Success(_) => {
+      case Success(_) =>
         if (x == 0) {
         println("X can not be 0")
         false
@@ -44,11 +93,9 @@ class Assignments{
             false
           }
         }
-      }
-      case Failure(_) => {
+      case Failure(_) =>
         throw new Exception("X cannot be zero")
         false
-      }
     }
   }
 
@@ -57,7 +104,7 @@ class Assignments{
   def insertElement(element:Int,position: Int,inputList :List[Int],outputList :List[Int] = List()): List[Any] =
   {
     if(position==0) {
-      (outputList++List(element)++inputList)
+      outputList++List(element)++inputList
     }
     else{
       insertElement(element,position-1,inputList.tail, outputList++List(inputList.head))
@@ -88,7 +135,7 @@ class Assignments{
   //Duplicate Elements given number of times
   def duplicateElements(n:Int,inputList:List[Char],outputList:List[Char] = List() ): List[Char] =
   {
-    if(inputList.tail.length==0) {
+    if(inputList.tail.isEmpty) {
       outputList++List.fill(n)(inputList.head)
     }
     else{
@@ -97,8 +144,8 @@ class Assignments{
   }
 
 
-  //Vowels in a list of stringss
-  def vowelInWords(input: List[String], output: List[Int] = List()): List[Int] = {
+  //Vowels in a list of strings
+  def vowelInWords(input: List[String]): List[Int] = {
     val VOWELS = "aeiouAEIOU"
     input.map(x=>{
       x.count(VOWELS.contains(_))
