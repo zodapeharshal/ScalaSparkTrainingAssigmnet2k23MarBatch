@@ -1,3 +1,5 @@
+package Mehul
+
 object Assignment1 {
   def main(args:Array[String]){
 
