@@ -16,6 +16,7 @@ import NthhighestElement.nthhighestelement
 import NthhighestElement.nthHighest
 import NocharacterArj.arrangep
 import NthprimeNo.nthPrime
+import NthhighestElement.sortfunction
 object Main extends App {
 
   //assert(fibonacci(3,0,1)==2,"wrong answer"); // fibonacci question
@@ -50,6 +51,7 @@ object Main extends App {
 
   //assert(nthhighestelement(List(5,1,2,89,23),3)==5,"wrong answer") nth highest Element using in build function
 
-  // assert(print( nthHighest(List(5,2,1,8,3),4))==5,"wrong answer) nth highest Element using priority queue
+  // assert( nthHighest(List(5,2,1,8,3),4))==5,"wrong answer") nth highest Element using priority queue
+  // assert(sortfunction(List(5,1,2,3,12),3)==3,"wrong answer") Nth highest element using custom sort function (merge sort)
 
 }
