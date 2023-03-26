@@ -2,7 +2,7 @@ package Mehul
 
 import scala.annotation.tailrec
 
-object Question4 {
+object Assignment6_Q4 {
   def add_elements_list(list: List[Int]): Int = {
     @tailrec
     def add_elements(list: List[Int], total: Int): Int = {
@@ -30,4 +30,5 @@ object Question4 {
   {
    print( division(List(1,2,3,4,5,6),3))
   }*/
+
 }
