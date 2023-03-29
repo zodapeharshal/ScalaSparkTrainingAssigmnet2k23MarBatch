@@ -22,8 +22,8 @@ object FindNthHighestElement extends App {
     nthHighest(list, (list.length - n + 1), list.length)
   }
 
-  val list = List(4, 3, 5, 1, 7, 6, 9, 10)
-  maxFunction(list)
- // println(findNthHighestElement(list,3))
+  //val list = List(4, 3, 5, 1, 7, 6, 9, 10)
+  //maxFunction(list)
+  //println(findNthHighestElement(list,3))
 
 }
