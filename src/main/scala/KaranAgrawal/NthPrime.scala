@@ -1,7 +1,7 @@
 package KaranAgrawal
 
 object NthPrime extends App {
-  val input=9
+  //val input=9
   def nthPrime(n:Int,count:Int,input:Int): Int = {
     if(count==input){
       n
@@ -31,11 +31,11 @@ object NthPrime extends App {
     isPrime(n,i+2)
   }
   }
-if(input==1){
-  println(2)
-}
-  else{
-   println(nthPrime(3,1,input))
-}
+//if(input==1){
+//  println(2)
+//}
+//  else{
+//   println(nthPrime(3,1,input))
+//}
 
 }
