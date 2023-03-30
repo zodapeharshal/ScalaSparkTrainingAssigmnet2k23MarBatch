@@ -26,9 +26,9 @@ object Main {
 //    val s = "apple"
 //    println(countNumVowels.numOfVowels(s))
 
-    val list = List("SAmruddhi", "sam", "win")
-    val result = new CountVowels
-    println(result.listOfVowels(list))
+//    val list = List("SAmruddhi", "sam", "win")
+//    val result = new CountVowels
+//    println(result.listOfVowels(list))
 
 
 
