@@ -1,8 +1,9 @@
 package RitikKuril
+//fibonnaci number
 object Question3 {
 
 
-  def Fibonacci(n:Int,temp0:BigInt,temp1:BigInt):BigInt ={
+  def fibonacci(n:Int,temp0:BigInt,temp1:BigInt):BigInt ={
 
     if(n==1)
       temp1;
@@ -10,7 +11,7 @@ object Question3 {
     else if(n==0)
       temp0;
     else
-      Fibonacci(n-1,temp1,temp0+temp1);
+      fibonacci(n-1,temp1,temp0+temp1);
 
   }
   /*def main(args: Array[String]): Unit = {
