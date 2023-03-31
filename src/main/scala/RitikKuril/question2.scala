@@ -1,13 +1,14 @@
 package RitikKuril
+//factorial
 object Question2 {
 
 
-  def Factorial(n:Int,res:Int):Int ={
+  def factorial(n:Int,res:Int):Int ={
    if(n<=1)
      res;
 
    else
-     Factorial(n-1,n*res);
+     factorial(n-1,n*res);
 
   }
   /*def main(args: Array[String]): Unit = {
