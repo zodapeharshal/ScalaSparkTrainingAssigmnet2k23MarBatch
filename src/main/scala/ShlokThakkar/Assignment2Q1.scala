@@ -1,12 +1,12 @@
 package ShlokThakkar
 
 object Assignment2Q1{
-  def Factorial(x:Int,fact: Int=1 ): Int =
+  def factorial(input:Int,fact: Int=1 ): Int =
   {
-    if(x<=1)
+    if(input<=1)
       fact
     else {
-      Factorial(x-1,x*fact)
+      factorial(input-1,input*fact)
     }
   }
 }
