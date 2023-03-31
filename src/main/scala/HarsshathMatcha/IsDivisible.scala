@@ -10,7 +10,7 @@ object IsDivisible  {
     }
     isDiv(list,x,0)
   }
-  //al list = List(1,6,8,4,5,9,2)
+  //val list = List(1,6,8,4,5,9,2)
   //val x= 7
   //println(isDivisibleElements(list,x))
 
