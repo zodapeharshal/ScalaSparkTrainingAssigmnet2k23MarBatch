@@ -8,7 +8,7 @@ object Main extends  App {
     /*************************************************************************************/
 
     // Question 1 : Pack consecutive duplicates of list elements into sublists
-    //        println(x.packConsecutive(List(1,1,1,2,2,2,3,3,3,3,3,4,1,1)))
+//            println(x.packConsecutive(List(1,1,1,2,2,2,3,3,3,3,3,4,1,1)))
     /*************************************************************************************/
 
     //Question 2 : Find nth prime number from starting if 2 is the first prime number.
