@@ -14,7 +14,6 @@ object RandomElements extends App {
               randomChar(list.filter(_ != list(x)), N - 1, list2.addOne(list(x)))
             }
           }
-
           val buf = ListBuffer[Char]()
           randomChar(list, N, buf)
         }
